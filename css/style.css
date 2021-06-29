@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .banner a img{
+    width: 100vw;
+    height: initial;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.navLinks{
+    display: flex;
+    list-style: none;
+}
+.navLinks li a{
+    text-decoration: none;
+    padding: .6rem;
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: bold;
+}
+.navLinks li a > img{
+    width: 1rem;
+    height: 1rem;
+}
