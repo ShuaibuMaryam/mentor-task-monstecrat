@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monstecrat</title>
+    <title>Monstercat</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <body>
     <!-------Header------>
@@ -35,6 +37,64 @@
             <li><a href="#">BLOG</a></li>
             <li><a href="#"><img src="./images/monstercat-symbol.png" alt="monstecrat symbol"></a></li>
         </ul>
+
+    <!-------Subnav-->
     </nav>
+    <div class="subnav">
+        <ul class="leftSubnav">
+            <li><a href="#"><i class="fa fa-music"></i>PLAYER</a></li>
+            <li><a href="#"><i class="fa fa-sign-in"></i>SIGN IN</a></li>
+            <li  id="search"><a href="#">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="SEARCH">
+            </a></li>
+        </ul>
+        <ul class="rightSubnav">
+            <button><i class="fa fa-random"></i></button>
+            <button><i class="fa fa-step-backward"></i></button>
+            <button><i class="fa fa-play"></i></button>
+            <button><i class="fa fa-step-forward"></i></button>
+            <button><i class="fa fa-repeat"></i></button>
+            <button><i class="fa fa-volume-down"></i></button>
+        </ul>
+    </div>
+
+    <!-------Middle Banner------->
+    <section class="middlebanner">
+        <div class="levelDaysContainer">
+            <div class="levelDays">
+                <div class="levelDaysImg">
+                    <a href="#"><img src="./images/Conro---Level-Days-LP-(Art).jpg" alt=""></a>
+                </div>
+                <div class="levelDaysText">
+                    <div class="headerText">
+                        <h1>LEVEL DAYS</h1>
+                        <h3>Conro</h3>
+                        <p>Released May 22, 2020</p>
+                    </div>
+                    <div class="levelDaysTextImages">
+                        <a href="#"><img src="./images/Conro Promo Pic.jpeg" alt=""></a>
+                        <a href="#"><img src="./images/promo-artist.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Track List-->
+        <div class="tracklist">
+            <div class="playSection">
+                <button>PLAY<i class="fa fa-play"></i></button>
+                <h3>STREAM IT YOUR WAY</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-spotify"></i></a></li>
+                    <li><a href="#"><i class="fab fa-apple"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                    <li><a href="#"><i class="fab fa-bandcamp"></i></a></li>
+            </ul>
+            </div>
+            <div class="tracklistTable"></div>
+        </div>
+    </section>
 </body>
 </html>
