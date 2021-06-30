@@ -1,0 +1,42 @@
+@media(max-width: 800px){
+    nav{
+        display: flex;
+    }
+    .navLinks li{
+        display: none;
+    }
+    #mobile-img{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    .subnav{
+        display: none;
+    }
+}
+
+@media(max-width:600px){
+    .levelDays{
+        flex-direction: column;
+        align-items: center;
+    }
+    .levelDays .levelDaysText{
+        margin-left: 0;
+    }
+    .levelDaysText .headerText h1{
+        font-size: 1.5rem;
+    }
+    .levelDaysText .headerText h3{
+        font-size: .8rem;
+    }
+    .levelDaysText .headerText p{
+        font-size: .6rem;
+    }
+    .headerText{
+        text-align: center;
+    }
+    .levelDaysTextImages{
+        display: none;
+    }
+}
