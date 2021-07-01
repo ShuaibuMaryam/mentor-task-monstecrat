@@ -138,10 +138,12 @@ nav .logo img{
 /*-----Track List-----*/
 .tracklist{
     background-color: #000000;
-    padding-top: 2rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
 }
 .tracklist .playSection{
-    margin-left: 1.8rem;
+    /* margin-left: 1.8rem; */
     width: 30%;
 }
 .tracklist .playSection li{
@@ -178,7 +180,123 @@ nav .logo img{
     color: #383838;
 }
 
-
 .tracklistTable{
+    width: 60%;
+    /* margin-right: 3.5rem; */
+    margin-left: 3.5rem;
+}
+.tracklistTable h5{
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+.table{
     background-color: white;
+    width: 100%;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+.table:nth-child(even){
+    
+}
+td{
+    font-size: 1.1rem;
+    color: #383838;
+    padding: .7rem .6rem;
+}
+.title-hidden{
+    display: none;
+    color: #383838;
+}
+#inline-title{
+    display: none;
+}
+.number{
+    width: 3%;
+}
+.tracklistTable table tbody .btn{
+    width: 3%;
+}
+.tracklistTable table tbody .btn button{
+    border: none;
+    cursor: pointer;
+}
+.tracklistTable table tbody .btn button > i{
+    font-size: .7rem;
+    padding: .3rem;
+    background: #383838;
+    color: white;
+    border-radius: 60%;
+}
+.tracklistTable table tbody .btn button > i:hover{
+    background-color: #1e90ff;
+}
+.songTitle{
+    width: 50%;
+}
+.songTitle span{
+    font-size: .85rem;
+}
+.songTitle span a{
+    color: #383838;
+}
+.songLink{
+    width: 20%;
+}
+.songLink a{
+    color: #383838;
+}
+.songVersion{
+    width: 15%;
+}
+.credit{
+    width: 1%;
+}
+.credit a{
+    border: 1px solid;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .7rem; 
+    color: #383838;
+}
+
+/*-----More-----*/
+.more{
+    margin-top: 2rem;
+}
+.more .heading h1{
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+.more .heading h1 a{
+    text-decoration: none;
+    color: #1e90ff;
+}
+.moreSongs{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 2.5rem;
+}
+/* .moreSongsContainer:hover{
+    text-decoration-color: #1e90ff;
+} */
+.moreSongs > div a{
+    text-decoration: none;
+    color: #383838;
+}
+.moreSongs > div a:hover{
+    color: #1e90ff;
+}
+.moreSongs > div > a > img{
+    width: 100%;    
+}
+.moreSongsText{
+    margin-top: .7rem;
+}
+.moreSongsText h4{
+    font-size: .9rem;
+    font-weight: light;
+    letter-spacing: 1.5px;
+    text-decoration: none;
 }
