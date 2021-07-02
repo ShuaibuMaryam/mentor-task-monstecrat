@@ -195,9 +195,10 @@ nav .logo img{
     width: 100%;
     margin-right: 3rem;
     margin-top: 1rem;
+    border-collapse: collapse;
 }
-.table:nth-child(even){
-    
+.table tr:nth-child(even){
+    background-color: #f7f4f4;
 }
 td{
     font-size: 1.1rem;
@@ -278,9 +279,6 @@ td{
     gap: 1rem;
     padding: 2.5rem;
 }
-/* .moreSongsContainer:hover{
-    text-decoration-color: #1e90ff;
-} */
 .moreSongs > div a{
     text-decoration: none;
     color: #383838;
@@ -299,4 +297,50 @@ td{
     font-weight: light;
     letter-spacing: 1.5px;
     text-decoration: none;
+}
+
+
+/*-----Footer-----*/
+footer{
+    padding: 2.5rem;
+}
+footer .footerSec1{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footerSec1 ul, footer .footerSec2 ul{
+    display: flex;
+    list-style-type: none;
+}
+footer .footerSec1 ul li a{
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #383838;
+}
+footer .footerSec1 ul li i{
+    margin-left: 1rem;
+}
+footer .footerSec2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+footer .footerSec2 ul li a{
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: lighter;
+    color: #383838;
+    letter-spacing: 1.5px;
+}
+footer .footerSec2 .copyright{
+    text-align: right;
+}
+footer .footerSec2 .copyright h5{
+    font-size: 1rem;
+    color: #383838;
+}
+footer .footerSec2 .copyright p{
+    color: #383838;
+    margin-top: .5rem;
 }
