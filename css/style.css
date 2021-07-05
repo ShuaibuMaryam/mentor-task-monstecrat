@@ -14,8 +14,7 @@ nav{
     padding: 0 1.8rem;
 }
 nav .logo img{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 11rem;
 }
 .navLinks{
     display: flex;
@@ -74,7 +73,6 @@ nav .logo img{
 .subnav .leftSubnav li a > input{
     border: none;
 }
-
 .rightSubnav button{
     margin-left: 1.1rem;
     border: none;
@@ -99,6 +97,11 @@ nav .logo img{
     background-position: center;
     background-size: cover;
     padding: 3rem 1.8rem;
+}
+#layLowBannerContainer{
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('../images/Conro - Lay Low (feat. David Benjamin) (Art).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .middlebanner .levelDays{
     display: flex;
@@ -156,11 +159,17 @@ nav .logo img{
     letter-spacing: 2px;
     outline: none;
     border: none;
+    color: #383838;
+    cursor: pointer;
+}
+.tracklist .playSection button:hover{
+    background-color: #383838;
+    color:white;
 }
 .tracklist .playSection button > i{
     margin-left: .5rem;
     font-size: .7rem;
-    color: #383838;
+    
 }
 .tracklist .playSection h3{
     color: #fdfdfd;
@@ -172,7 +181,7 @@ nav .logo img{
 .tracklistSocials{
     display: grid;
     gap: .5rem;
-    grid-template-columns: repeat(5, 70px);
+    grid-template-columns: repeat(4, 70px);
 }
 .tracklistSocials li a > i{
     background-color: white;
@@ -301,8 +310,8 @@ td{
     letter-spacing: 1.5px;
     text-decoration: none;
 }
-.moreSongsText a span{
-    font-size: .84rem;
+.moreSongsText span{
+    font-size: .83rem;
 }
 
 
