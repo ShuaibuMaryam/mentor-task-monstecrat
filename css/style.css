@@ -23,7 +23,7 @@ nav .logo img{
 }
 .navLinks li a{
     text-decoration: none;
-    padding: .6rem;
+    padding-left: 1rem;
     font-size: 1.3rem;
     color: #000000;
     font-weight: bold;
@@ -57,9 +57,10 @@ nav .logo img{
 }
 .leftSubnav li:not(#search){
     border-right: 1px solid grey;
+    margin-right: .6rem;
 }
 .leftSubnav li a{
-    padding: .6rem;
+    padding-right: .6rem;
     text-decoration: none;
     color: #383838;
     font-size: .9rem;
@@ -97,12 +98,10 @@ nav .logo img{
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('../images/conro-level-days-bg.jpg');
     background-position: center;
     background-size: cover;
-    padding: 3rem 0 1.5rem 0;
+    padding: 3rem 1.8rem;
 }
 .middlebanner .levelDays{
     display: flex;
-    width: 95%;
-    margin: 0 auto;
 }
 .middlebanner .levelDays .levelDaysImg img{
     width: 360px;
@@ -135,12 +134,14 @@ nav .logo img{
     margin-top: 1.2rem;
 }
 
+
+
 /*-----Track List-----*/
 .tracklist{
     background-color: #000000;
-    padding: 2rem 0;
+    padding: 2rem 1.8rem;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .tracklist .playSection{
     /* margin-left: 1.8rem; */
@@ -171,7 +172,7 @@ nav .logo img{
 .tracklistSocials{
     display: grid;
     gap: .5rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 70px);
 }
 .tracklistSocials li a > i{
     background-color: white;
@@ -182,8 +183,7 @@ nav .logo img{
 
 .tracklistTable{
     width: 60%;
-    /* margin-right: 3.5rem; */
-    margin-left: 3.5rem;
+    margin-left: 4rem;
 }
 .tracklistTable h5{
     color: white;
@@ -267,7 +267,7 @@ td{
 }
 .more .heading h1{
     font-size: 2rem;
-    margin-left: 1.5rem;
+    margin-left: 1.8rem;
 }
 .more .heading h1 a{
     text-decoration: none;
@@ -279,11 +279,14 @@ td{
     gap: 1rem;
     padding: 2.5rem;
 }
-.moreSongs > div a{
+.moreSongs div{
+    box-shadow: 3px #383838;
+}
+.moreSongs div a{
     text-decoration: none;
     color: #383838;
 }
-.moreSongs > div a:hover{
+.moreSongs div a:hover{
     color: #1e90ff;
 }
 .moreSongs > div > a > img{
@@ -293,16 +296,19 @@ td{
     margin-top: .7rem;
 }
 .moreSongsText h4{
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: light;
     letter-spacing: 1.5px;
     text-decoration: none;
+}
+.moreSongsText a span{
+    font-size: .84rem;
 }
 
 
 /*-----Footer-----*/
 footer{
-    padding: 2.5rem;
+    padding: 1.8rem;
 }
 footer .footerSec1{
     display: flex;
@@ -327,11 +333,16 @@ footer .footerSec2{
     margin-top: 1.5rem;
 }
 footer .footerSec2 ul li a{
+    font-size: .9rem;
     margin-right: 1rem;
     text-decoration: none;
     font-weight: lighter;
     color: #383838;
     letter-spacing: 1.5px;
+}
+footer .footerSec2 ul li a i{
+    font-size: unset;
+    margin-right: .6rem;
 }
 footer .footerSec2 .copyright{
     text-align: right;
@@ -343,4 +354,13 @@ footer .footerSec2 .copyright h5{
 footer .footerSec2 .copyright p{
     color: #383838;
     margin-top: .5rem;
+}
+footer .footerSec3{
+    width: 70%;
+    text-align: center;
+    margin: 3rem auto;
+}
+footer .footerSec3 p{
+    font-size: .8rem;
+    color: #8b8888;
 }
