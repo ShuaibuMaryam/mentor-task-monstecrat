@@ -120,12 +120,14 @@
         
     }
     footer .footerSec2 .copyright{
-        /* text-align: initial; */
         width: auto;
         margin-top: 2rem;
 
     }
     footer .footerSec3{
         width: 100%;
+    }
+    footer .footerSec3 p{
+        font-size: .5rem;
     }
 }
