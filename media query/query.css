@@ -99,7 +99,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        width: 90%;
     }
     footer .footerSec1 ul li a{
         margin-right: 0;
