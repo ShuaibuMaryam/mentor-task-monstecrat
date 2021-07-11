@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="./media query/query.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <!-------Navigation Bar------->
+    <audio id="song">
+        <source src="./audio/Short Song (English Song) [W Lyrics] 30 seconds.mp3">
+    </audio>
     <nav>
         <div class="logo">
             <a href="./index.html"><img src="https://www.monstercat.com/img/monstercat-logo.svg" alt=""></a>
@@ -48,7 +52,7 @@
             <span></span>
             <button><i class="fa fa-random"></i></button>
             <button><i class="fa fa-step-backward"></i></button>
-            <button><i class="fa fa-play"></i></button>
+            <button onclick="playAudio();"><i class="fa fa-play"></i></button>
             <button><i class="fa fa-step-forward"></i></button>
             <button><i class="fa fa-repeat"></i></button>
             <button><i class="fa fa-volume-down"></i></button>
@@ -79,7 +83,7 @@
         <!--Track List-->
         <div class="tracklist">
             <div class="playSection">
-                <button>PLAY<i class="fa fa-play"></i></button>
+                <button onclick="playAudio()">PLAY<i class="fa fa-play"></i></button>
                 <h3>STREAM IT YOUR WAY</h3>
                 <ul class="tracklistSocials">
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
