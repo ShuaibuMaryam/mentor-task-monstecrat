@@ -9,7 +9,7 @@ x.forEach(function(el){
     el.addEventListener("click", function(){
         if(source.paused){
             source.play();
-            el.className = "fa fa-pause";
+            el.className = "fa fa-pause"; 
         }
         else{
             source.pause();
