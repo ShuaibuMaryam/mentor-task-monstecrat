@@ -9,13 +9,9 @@
     <link rel="stylesheet" href="./media query/query.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="./js/script.js"></script>
 </head>
 <body>
     <!-------Navigation Bar------->
-    <audio id="song">
-        <source src="./audio/Short Song (English Song) [W Lyrics] 30 seconds.mp3">
-    </audio>
     <nav>
         <div class="logo">
             <a href="./index.html"><img src="https://www.monstercat.com/img/monstercat-logo.svg" alt=""></a>
@@ -52,7 +48,8 @@
             <span></span>
             <button><i class="fa fa-random"></i></button>
             <button><i class="fa fa-step-backward"></i></button>
-            <button onclick="playAudio();"><i class="fa fa-play"></i></button>
+            <button><i class="fa fa-play" data-playicon="playButton"></i></button>
+            <!-- <button class="pauseButton"><i class="fa fa-pause"></i></button> -->
             <button><i class="fa fa-step-forward"></i></button>
             <button><i class="fa fa-repeat"></i></button>
             <button><i class="fa fa-volume-down"></i></button>
@@ -83,7 +80,7 @@
         <!--Track List-->
         <div class="tracklist">
             <div class="playSection">
-                <button onclick="playAudio()">PLAY<i class="fa fa-play"></i></button>
+                <button>PLAY<i class="fa fa-play" data-playicon="playButton"></i></button>
                 <h3>STREAM IT YOUR WAY</h3>
                 <ul class="tracklistSocials">
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -98,22 +95,28 @@
                 <table class="table">
                     <tbody>
                         <tr>
+                            <audio  data-song="audio">
+                                <source src="" data-song='song-source'>
+                            </audio>
                             <td class="number">1.</td>
                             <td class="btn">
-                                <button><i class="fa fa-play"></i></button>
+                                <button><i class="fa fa-play" data-song="playbutton"></i></button>
                             </td>
-                            <td class="songTitle">The small things <a href="#" class="title-hidden">Conro</a></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songTitle">Alicia Keys - New York&quotEmpire State of Mind&quot <a href="#" class="title-hidden">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">3.35</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
                         <tr>
+                            <audio  data-song="audio">
+                                <source src="./audio/One Direction - Story of My Life.mp3" data-song='song-source'>
+                            </audio>
                             <td class="number">2.</td>
                             <td class="btn">
-                                <button><i class="fa fa-play"></i></button>
+                                <button><i class="fa fa-play" data-song="playbutton"></i></button>
                             </td>
-                            <td class="songTitle">Without Your Love <a href="#" class="title-hidden">Conro</a></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songTitle">One Direction - Story of My Life <a href="#" class="title-hidden">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">3.09</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -123,7 +126,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Therapy <a href="#" class="title-hidden">Conro</a></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">3.06</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -133,7 +136,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Fighters <a href="#" class="title-hidden">Conro</a></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-song="song-link">Conro</a></td>
                             <td class="songVersion">3.46</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -143,7 +146,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Way Up <a href="#" class="title-hidden" id="inline-title">Conro</a> <span id="inline-title">&</span> <a href="#" class="title-hidden" id="inline-title">Nevve</a> <br><span>Not available for content creator liscences. <a href="#">Read more</a></span></td>
-                            <td class="songLink"><a href="#">Conro</a> & <a href="#">Nevve</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a> & <a href="#">Nevve</a></td>
                             <td class="songVersion">3.32</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -153,7 +156,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Waiting <a href="#" class="title-hidden">Conro</a> <span>Not available for content creator liscences. <a href="#">Read more</a></span></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">3.07</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -163,7 +166,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Dreaming <a href="#" class="title-hidden">Conro</a></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">2.57</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -173,7 +176,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Tattoo <a href="#" class="title-hidden">Conro</a> </td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">3.29</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -183,7 +186,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Out For The Night <a href="#" class="title-hidden">Conro</a></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">3.05</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -193,7 +196,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Overdue <a href="#" class="title-hidden">Conro</a></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">2.48</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -203,7 +206,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Say It <a href="#" class="title-hidden">Conro</a></td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">3.04</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -213,7 +216,7 @@
                                 <button><i class="fa fa-play"></i></button>
                             </td>
                             <td class="songTitle">Here To Stay <a href="#" class="title-hidden">Conro</a> </td>
-                            <td class="songLink"><a href="#">Conro</a></td>
+                            <td class="songLink"><a href="#" data-songlink="song-link">Conro</a></td>
                             <td class="songVersion">2.44</td>
                             <td class="credit"><a href="#">Credit</a></td>
                         </tr>
@@ -341,5 +344,7 @@
             <p>We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast Salish peoples, including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations, on which Monstercat's Vancouver HQ stands.</p>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

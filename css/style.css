@@ -87,7 +87,9 @@ nav .logo img{
 .rightSubnav button > i:hover{
     color: #1e90ff;
 }
-
+.pauseButton{
+    display: none;
+}
 
 /*-----Middle Banner-----*/
 .middlebanner{
