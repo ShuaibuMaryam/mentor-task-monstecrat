@@ -46,7 +46,7 @@
         align-items: center;
     }
     .tracklist .playSection{
-        width: 80%;
+        width: 90%;
     }
     .tracklist .playSection button{
         width: 100%;
@@ -63,7 +63,12 @@
     .tracklistTable{
         margin: 0;
         margin-top: 1rem;
-        width: 80%;
+        width: 90%;
+    }
+    .tracklistTable table tbody .btn button{
+        border: none;
+        cursor: pointer;
+        outline: none;
     }
     .number, .songLink, .songVersion{
         display: none;
@@ -130,5 +135,14 @@
     }
     footer .footerSec3 p{
         font-size: .5rem;
+    }
+}
+
+@media(max-width: 450px){
+    footer .footerSec1 .footerLinks{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
     }
 }
